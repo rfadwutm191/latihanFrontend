@@ -77,7 +77,7 @@ function TambahPembelianModal({ onClose, onSuccess }) {
       updated[idx] = { ...updated[idx], new_produk: { ...updated[idx].new_produk, [subField]: value } };
       if (subField === 'harga' && !updated[idx].harga_beli) {
         updated[idx].harga_beli = value;
-      }
+      }A
     } else {
       updated[idx] = { ...updated[idx], [field]: value };
     }

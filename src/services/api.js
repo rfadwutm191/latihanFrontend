@@ -1,7 +1,12 @@
 import axios from 'axios';
 
+//Development
+const APP_URL = 'http://127.0.0.1:8000';
+
+export const STORAGE_URL = `${APP_URL}/storage`;
+
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api', // Sesuaikan dengan Laravel
+  baseURL: `${APP_URL}/api`,
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
